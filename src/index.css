@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .text-form {
+    @apply font-montserrat not-italic flex-none 
+  }
+  .menu-narbar {
+    @apply border-solid border-black border-b-[1px] hover:text-[#FA4A0C] cursor-pointer
+  }
+  .menu-desktop {
+    @apply font-montserrat not-italic font-semibold text-[16px] leading-7 tracking-[0.2px] hover:text-[#FA4A0C] cursor-pointer
+  }
+}
