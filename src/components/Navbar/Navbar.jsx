@@ -27,7 +27,7 @@ export const Navbar = (props) => {
               </div>
             )
         }
-        <ul className=" md:flex pt-[48px] pl-[242px] md:pt-[64px] md:ml-[543px]">
+        <ul className=" md:flex pt-[48px] pl-[242px] md:pt-[64px] md:ml-[543px] 2xl:ml-[650px]">
           {onpenMenu && isMobile ? (<GrClose className='h-[15px] w-[20px]' onClick={handleChange} />)
             : !onpenMenu && isMobile ?
               (<FcMenu className='h-[15px] w-[20px]' onClick={handleChange} />)

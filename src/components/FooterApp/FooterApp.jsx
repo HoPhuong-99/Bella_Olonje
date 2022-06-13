@@ -43,8 +43,8 @@ export const FooterApp = (props) => {
                  tracking-[0.2px] flex-none order-[0px] grow-0 px-[86.5px] md:pt-[20px]">
                 Available on your favorite store. Start your premium experience now
               </h4>
-              <div className="flex  md:pt-[60px] pt-[60px] gap-[19px]  ">
-                <button className="flex-row md:hover:bg-orange-300 bg-[#FA4A0C] text-center w-[137px] h-[64px] ml-[554.5px] rounded-[10px] 
+              <div className="flex md:pt-[60px] pt-[60px] gap-[19px]">
+                <button className="flex-row md:hover:bg-orange-300 bg-[#FA4A0C] text-center w-[137px] h-[64px] 2xl:ml-[595px] ml-[554.5px] rounded-[10px] 
                  py-[18px] flex-none order-[0px] grow-[0px]">
                   <p className='font-montserrat not-italic font-bold text-[16px] leading-[28px] tracking-[0.1px] '>Buy now</p>
                 </button>
@@ -76,9 +76,9 @@ export const FooterApp = (props) => {
               <div className="md:w-[1210px] md:h-[133px] md:mx-[115px] flex">
                 <img src={LogoFooter} alt="" className='md:pl-[71px] md:pt-[16.1px] md:pb-[14.9px]' />
                 <div className="mt-[66.69px] flex justify-center md:pl-[715.84px]">
-                  <AiOutlineTwitter size={"40px"} className="text-[#FA4A0C] mr-[32.33px] " />
-                  <AiFillFacebook size={"40px"} className="text-[#FA4A0C] mr-[32.97px] " />
-                  <AiFillInstagram size={"40px"} className="text-[#FA4A0C] " />
+                  <AiOutlineTwitter size={"40px"} className="text-[#FA4A0C] mr-[32.33px] cursor-pointer" />
+                  <AiFillFacebook size={"40px"} className="text-[#FA4A0C] mr-[32.97px] cursor-pointer" />
+                  <AiFillInstagram size={"40px"} className="text-[#FA4A0C] cursor-pointer" />
                 </div>
               </div>
               <div className='md:text-center'>
