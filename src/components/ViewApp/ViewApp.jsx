@@ -11,7 +11,7 @@ export const ViewApp = (props) => {
 
   return (
     <section className='bg-[#FAFAFA] md:bg-white md:pt-[80px]'>
-      <div>
+      <div className='' id="product">
         {
           isMobile ? (
             <>
@@ -28,8 +28,8 @@ export const ViewApp = (props) => {
                   flex-none grow-0 order-0 mr-[79.5px] ml-[77.5px] text-[#737373] ">
                   An account is created with your email and a desired password
                 </h4>
-                <div className='z-[-1] mt-[-120px]'>
-                  <img src={Viewlogin} alt="" />
+                <div className='z-[-1] mt-[-90px]'>
+                  <img src={Viewlogin} alt="" className='mx-auto' />
                 </div>
               </div></>
           )
@@ -81,8 +81,8 @@ export const ViewApp = (props) => {
           Shop for your favorite meals or dinks and enjoy while doing it.
         </h4>
         {
-          isMobile ? (<div className="mt-[-131px] ">
-            <img src={Viewapp} alt="" className='' />
+          isMobile ? (<div>
+            <img src={Viewapp} alt="" className='mx-auto mt-[-90px]' />
           </div>)
             :
             (
@@ -98,20 +98,20 @@ export const ViewApp = (props) => {
           <div className='w-[100%] text-center '>
             <div className='mt-[-130px]'>
               <h3 className='font-montserrat not-italic font-bold text-2xl tracking-[0.1px]
-                flex-none grow-0 order-0 mx-[145.5px] text-[#FA4A0C]'>
+                flex-none grow-0 order-0 text-[#FA4A0C] '>
                 CheckOut
               </h3>
               <h2 className="pt-[40px] font-montserrat not-italic font-bold text-[40px] tracking-[0.2px]
-                flex-none grow-0 order-0 leading-[57px] mx-[49px] ml-[37px] ">
+                flex-none grow-0 order-0 leading-[57px] mx-[49px]">
                 When you done check out and get it delivered.
               </h2>
             </div>
             <h4 className="pt-[50px] font-montserrat not-italic font-medium text-2xl tracking-[0.2px]
-                flex-none grow-0 order-0 mr-[79.5px] ml-[77.5px] text-[#737373] ">
+                flex-none grow-0 order-0 mx-[78.5px] text-[#737373] z-10 ">
               When you done check out and get it delivered with ease.
             </h4>
-            <div className="mt-[-131px]">
-              <img src={ViewCheckOut} alt="" />
+            <div className="">
+              <img src={ViewCheckOut} alt="" className='mx-auto mt-[-90px]' />
             </div>
           </div>)
           :

@@ -27,7 +27,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    if (windowSite.width < 500) {
+    if (windowSite.width < 768) {
       setMobile(true)
     }
     else {

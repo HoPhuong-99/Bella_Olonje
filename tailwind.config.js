@@ -10,7 +10,11 @@ module.exports = {
       poppins:["Poppins"]
     },
 
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'background-footer' : "url('./src/assets/desktop/FooterBG.png')"
+      }
+    },
   },
   plugins: [],
 }

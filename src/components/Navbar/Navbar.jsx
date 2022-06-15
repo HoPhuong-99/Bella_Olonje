@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-scroll'
 import Logo from '../../assets/mobile/Bella Olonje logo 111 1.png'
 import LogoDesktop from '../../assets/desktop/Bella Olonje logo 111 1.png'
 import { FcMenu } from 'react-icons/fc'
@@ -14,30 +15,30 @@ export const Navbar = (props) => {
   const { isMobile } = props
 
   return (
-    <nav className='flex  '>
-      <div className="flex w-[100%] h-[112px] md:h-[155px] ">
+    <nav className='flex md:fixed md:bg-white md:w-[100%] '>
+      <div className="flex justify-between w-[100%] h-[112px] md:h-[155px] ">
         {
           isMobile ? (<div className="pt-[17px] pl-[25px]">
             <img src={Logo} alt="" className='' />
           </div>)
             :
             (
-              <div className="md:pt-[26.12px] md:pl-[90px] md:absolute">
+              <div className="md:pt-[26.12px] md:pl-[90px]">
                 <img src={LogoDesktop} alt="" className='md:w-[206px] md:h-[101.76px]' />
               </div>
             )
         }
-        <ul className=" md:flex pt-[48px] pl-[242px] md:pt-[64px] md:ml-[543px] 2xl:ml-[650px]">
+        <ul className="md:flex mt-[48px] mr-[23px] md:mr-[50px] md:mt-[63px]">
           {onpenMenu && isMobile ? (<GrClose className='h-[15px] w-[20px]' onClick={handleChange} />)
             : !onpenMenu && isMobile ?
               (<FcMenu className='h-[15px] w-[20px]' onClick={handleChange} />)
               : (
                 <>
                   <div className='flex gap-[114px]'>
-                    <li className='menu-desktop text-[#FA4A0C] ' >Home </li>
-                    <li className='menu-desktop'>Product</li>
-                    <li className='menu-desktop'>Fag</li>
-                    <li className='menu-desktop'>Contact</li>
+                    <Link to="home" spy={true} smooth={true} offset={-100} duration={500} className='menu-desktop' >Home </Link >
+                    <Link to="product" spy={true} smooth={true} offset={-100} duration={500} className='menu-desktop'>Product</Link >
+                    <Link to="feg" spy={true} smooth={true} offset={-100} duration={500} className='menu-desktop'>Fag</Link >
+                    <Link to="contact" spy={true} smooth={true} offset={0} duration={500} className='menu-desktop'>Contact</Link >
                   </div>
                 </>
               )
