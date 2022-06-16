@@ -28,15 +28,15 @@ export const Foodapp = (props) => {
             Download the bella onoje’s food app now on
           </h4>
         </div>
-        <div className='md:flex md:flex-row md:mx-auto md:pb-[146px] md:justify-center md:gap-4 flex flex-col items-center gap-4 '>
-            <button className='md:z-10 bg-[#FA4A0C] md:hover:bg-orange-300 w-[236px] py-4 px-[58.5px] rounded-[30px] text-white'>
+        <div className='md:flex md:flex-row md:pb-[146px] md:justify-center md:gap-4 flex flex-col items-center gap-4 '>
+            <button className='flex justify-center items-center md:z-10 bg-[#FA4A0C] md:hover:bg-orange-300 md:px-[50px] px-[50px]  h-[68px] md:h-[68px]  rounded-[30px] text-white'>
               <h3 className='font-montserrat not-italic font-bold text-[24px] leading-[36px] tracking-[0.1px]'>
                 Playstore
               </h3>
             </button>
-            <button className='md:z-20 z-20 w-[236px] md:hover:bg-gray-300 md:h-[68px] py-4 px-[58.5px] rounded-[30px] text-[#FA4A0C] border-[1px] border-[#FA4A0C] 
-           md:border-white '>
-              <h3 className=' w-[123px]  font-montserrat not-italic font-bold text-[24px] leading-[36px] tracking-[0.1px]'>
+            <button className='flex justify-center items-center md:z-20 z-20  h-[68px]  md:h-[68px]  md:hover:bg-orange-300  rounded-[30px] text-[#FA4A0C] border-[1px] border-[#FA4A0C] 
+           md:border-white md:text-white '>
+              <h3 className='  font-montserrat not-italic font-bold text-[24px] leading-[36px] tracking-[0.1px] md:px-[50px] px-[50px]'>
                 App store
               </h3>
             </button>
