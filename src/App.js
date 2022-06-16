@@ -39,7 +39,7 @@ function App() {
 
 
   return (
-    <div className="overflow-y-auto overflow-x-hidden relative">
+    <div className="overflow-y-auto overflow-x-hidden relative" id='header'>
       <Navbar isMobile={isMobile} />
       <Foodapp isMobile={isMobile}/>
       <ViewApp isMobile={isMobile}/>

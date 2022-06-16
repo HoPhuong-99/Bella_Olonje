@@ -1,6 +1,5 @@
 import React from 'react'
 import { AiOutlineTwitter, AiFillLinkedin, AiFillFacebook, AiFillInstagram } from 'react-icons/ai'
-import FooterBG from '../../assets/desktop/FooterBG.png'
 import LogoFooter from '../../assets/desktop/Bella Olonje logo 111 1.png'
 
 export const FooterApp = (props) => {
@@ -35,17 +34,18 @@ export const FooterApp = (props) => {
           </div>
         </>)
           : (<>
-            <div className="md:text-center md:pb-[165px] md:bg-gray-400 md:text-white relative z-[-1] " id="contact">
-              <h2 className='font-montserrat font-bold text-[40px] leading-[57px] tracking-[0.2px] md:px-[468.5px] md:pt-[135.9px]'>
+            <div className="md:w-[100%] md:h-auto md:text-center md:pb-[165px] md:bg-[url('assets/desktop/FooterBG.png')] md:bg-cover 
+            md:text-white relative md:z-0 " id="contact">
+              <h2 className='font-montserrat font-bold text-[40px] leading-[57px] tracking-[0.2px]  md:pt-[135.9px]'>
                 Download the app now.
               </h2>
               <h4 className="font-montserrat not-italic font-medium text-[24px] leading-[38px] 
                  tracking-[0.2px] flex-none order-[0px] grow-0 px-[86.5px] md:pt-[20px]">
-                Available on your favorite store. Start your premium experience now
+                Available on your favorite store. Start your premium experience now 
               </h4>
-              <div className=" md:flex md:flex-row md:justify-center md:pt-[60px] pt-[60px] gap-[19px]">
+              <div className=" md:flex md:flex-row md:justify-center md:pt-[60px] pt-[60px] gap-[19px] md:z-10">
                 <button className="flex-row md:hover:bg-orange-300 bg-[#FA4A0C] text-center w-[137px] h-[64px] rounded-[10px] 
-                 py-[18px] flex-none order-[0px] grow-[0px]">
+                 py-[18px] flex-none order-[0px] grow-[0px] ">
                   <p className='font-montserrat not-italic font-bold text-[16px] leading-[28px] tracking-[0.1px] '>Buy now</p>
                 </button>
                 <button className='w-[194px] md:hover:bg-gray-300 md:w-[194px] rounded-[10px] border-solid border-white border-2  '>
@@ -73,7 +73,7 @@ export const FooterApp = (props) => {
               </sub>
             </div></>) :
             (<>
-              <div className="md:mx-[115px]">
+              <div className="md:mx-[115px] md:mt-[63px]">
                 <div className="md:flex md:justify-between">
                   <img src={LogoFooter} alt="" className='md:pl-[71px] md:pt-[16.1px] md:pb-[14.9px]' />
                   <div className="mt-[66.69px] md:flex md:mr-[20px]] md:gap-[31.76px] ">

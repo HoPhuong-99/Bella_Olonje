@@ -15,7 +15,7 @@ export const Navbar = (props) => {
   const { isMobile } = props
 
   return (
-    <nav className='flex md:fixed md:bg-white md:w-[100%] '>
+    <nav className='flex md:fixed md:bg-white md:w-[100%] md:z-30' >
       <div className="flex justify-between w-[100%] h-[112px] md:h-[155px] ">
         {
           isMobile ? (<div className="pt-[17px] pl-[25px]">
@@ -23,8 +23,11 @@ export const Navbar = (props) => {
           </div>)
             :
             (
-              <div className="md:pt-[26.12px] md:pl-[90px]">
-                <img src={LogoDesktop} alt="" className='md:w-[206px] md:h-[101.76px]' />
+              <div className="md:pt-[26.12px] md:pl-[90px] md:cursor-pointer">
+
+                <Link to="header" spy={true} smooth={true} offset={-100} duration={500} className='menu-desktop' >
+                  <img src={LogoDesktop} alt="" className='md:w-[206px] md:h-[101.76px]' />
+                </Link >
               </div>
             )
         }
