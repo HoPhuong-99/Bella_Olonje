@@ -10,7 +10,8 @@ export const ViewApp = (props) => {
   const { isMobile } = props
 
   return (
-    <section className='bg-[#FAFAFA] md:mt-[80px] md:bg-white md:w-[80%] md:flex md:flex-col md:mx-auto ' id="product ">
+    <div id="product">
+    <section className='bg-[#FAFAFA] md:mt-[80px] md:bg-white md:w-[80%] md:flex md:flex-col md:mx-auto '>
       <div>
         {
           isMobile ? (
@@ -35,7 +36,7 @@ export const ViewApp = (props) => {
           )
             : (
               <div>
-                <div className='z-[-1] md:w-[100%] md:items-center md:flex md:justify-around md:gap-10 '>
+                <div className='z-[-1] md:w-[100%] md:items-center md:flex md:justify-between md:gap-10 '>
                   <img src={LoginDesktop} alt="" />
                   <div className=''>
                     <h3 className='pt-[65px] font-montserrat not-italic font-bold text-2xl track-[0.1px]
@@ -57,8 +58,8 @@ export const ViewApp = (props) => {
         }
       </div>
       <div>
-        <div className='w-[100%] text-center md:text-left md:items-center md:flex md:justify-around md:pt-[120px] md:gap-10'>
-          <div className='md:w-[70%]'>
+        <div className='w-[100%] text-center md:items-center md:flex md:justify-between md:pt-[120px] md:gap-10'>
+          <div className='md:w-[70%] md:text-left'>
             <div>
               {
                 isMobile ? (<h3 className='font-montserrat not-italic font-bold text-2xl tracking-[0.1px]
@@ -88,7 +89,7 @@ export const ViewApp = (props) => {
             </div>)
               :
               (
-                <div className="md:w-[30%]">
+                <div className="">
                   <img src={AppDeskTop} alt="" />
                 </div>
               )
@@ -120,7 +121,7 @@ export const ViewApp = (props) => {
             :
             (<>
               <div className=''>
-                <div className="md:flex md:flex-row md:items-center md:justify-around md:pb-[300px] md:pt-[120px] md:gap-10">
+                <div className="md:flex md:flex-row md:items-center md:justify-between md:pb-[300px] md:pt-[120px] md:gap-10">
                   <img src={CheckoutDesktop} alt="" className='' />
                   <div className=''>
                     <h3 className='pt-[65px] font-montserrat not-italic font-bold text-2xl track-[0.1px]
@@ -143,6 +144,8 @@ export const ViewApp = (props) => {
         }
       </div>
     </section>
+    </div>
+
   )
 }
 
